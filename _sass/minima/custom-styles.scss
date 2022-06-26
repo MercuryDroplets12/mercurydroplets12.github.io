@@ -1,0 +1,117 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+// Import pre-styling-overrides hook and style-partials.
+@import "minima/custom-variables",
+  // Hook to override predefined variables.
+  "minima/base",
+  // Defines element resets.
+  "minima/layout",
+  // Defines structure and style based on CSS selectors.
+  "../../node_modules/bootstrap/scss/bootstrap.scss"; // Bootstrap styles.
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Nav bar
+a.nav-link {
+  color: $gray-700 !important;
+  font-family: Adelle Semibold;
+  @include font-size(1.35rem !important);
+  &:hover {
+    text-decoration: underline !important;
+  }
+  &:visited {
+    color: $gray-700 !important;
+  }
+  @include media-breakpoint-down(md) {
+    @include font-size(1.05rem !important);
+  }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: $gray-500 !important; // overwrite bootstrap
+}
+
+
+.dropdown-menu.show {
+  min-width: 150px;
+}
+
+svg.shape1{
+  clip-path: polygon(50% 0%, 0 50%, 100% 50%);
+}
+
+// Index
+#h1-span-title{
+  outline: #222222 solid 2px;
+  outline-offset: 15px;
+}
+
+h2.bg-dark {
+  --bs-bg-opacity: 0.5;
+}
+
+h2 a {
+  color: white !important;
+}
+
+.car-image.col-1 {
+  transition: width 0.3s ease-in-out;
+}
+
+.car-image.col-7 {
+  transition: width 0.3s ease-in-out;
+}
+
+.overlay-w3 {
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 0;
+  transition: 1.5s ease;
+}
+
+// Cutomized Buttons
+.btn-outline-primary-fs {
+  color: $purple-700 !important;
+  border-color: $blue-700 !important;
+  font-family: Adelle Regular;
+  &:hover {
+    color: white !important;
+    border-color: $blue-500 !important;
+    background-color: $blue-700;
+  }
+}
+
+// ===================== footer.html
+svg {
+  -webkit-filter: invert(100%);
+  /* safari 6.0 - 9.0 */
+  filter: invert(100%);
+  opacity: 85%;
+  width: 1rem;
+  height: auto;
+}
+
+small {
+  font-size: 0.5rem;
+}
+
+.svg-bg {
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+// pages general
+
+
+

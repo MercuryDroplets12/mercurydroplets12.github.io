@@ -1,0 +1,37 @@
+{% include head.html %}
+
+<article class="page">
+  <div class="page-content">
+
+    <div class="position-relative w-100">
+      <div class="block row" style="height: 100vh;"></div>
+      <div class="overlay-w3 position-absolute col-12 d-flex flex-column align-content-around">
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" id="svg"><polygon id="poly" points="31.69872981077806,99.99999999999999 118.30127018922192,100.00000000000003 75.00000000000001,25 "/></svg>
+        <h1 class="m-4 text-center mt-auto">
+          
+          <span class="p-3" id="h1-span-title">{{ page.title }}</span>
+        </h1>
+        <div class="text-center mt-auto mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle text-light" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+          </svg>
+          <p>scroll</p>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/babel">
+      setTimeout(() => {
+        $('.overlay-w3').css('bottom', '0');
+        $('.overlay-w3').css('height', '100%');
+      }, 1200);
+    </script>
+
+
+    <div class="container-fluid">
+      {{content}}
+    </div>
+  </div>
+</article>
+
+{% include footer.html %}

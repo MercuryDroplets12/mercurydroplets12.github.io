@@ -1,0 +1,110 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: index
+title: "吴雪梅</br>May Wu's Profile"
+---
+
+<div class="col-12">
+    <div class="d-flex">
+        <div style="background-image: url(/assets/image/homeimage/1.jpeg); background-size:cover; height: 800px;"
+            id="image1" class="border border-5 border-dark col-7 car-image">
+            <h2 class="p-3 bg-dark"><a href="#">现房出售</br>New Listing</a></h2>
+        </div>
+        <div style="background-image: url(/assets/image/homeimage/2.jpeg); background-size:cover; height: 800px;"
+            id="image2" class="border border-5 border-dark col-1 car-image">
+            <h2 class="p-3 bg-dark"><a href="#">最新成交</br>Just Sold</a></h2>
+        </div>
+        <div style="background-image: url(/assets/image/homeimage/3.jpeg); background-size:cover; height: 800px;"
+            id="image3" class="border border-5 border-dark col-1 car-image">
+            <h2 class="p-3 bg-dark"><a href="#">关于我们</br>About Us</a></h2>
+        </div>
+        <div style="background-image: url(/assets/image/homeimage/4.jpeg); background-size:cover; height: 800px;"
+            id="image4" class="border border-5 border-dark col-1 car-image">
+            <h2 class="p-3 bg-dark"><a href="#">市场规划</br>Marketing Plan</a></h2>
+        </div>
+        <div style="background-image: url(/assets/image/homeimage/5.jpeg); background-size:cover; height: 800px;"
+            id="image5" class="border border-5 border-dark col-1 car-image">
+            <h2 class="p-3 bg-dark"><a href="#">迁居服务</br>Relocation Services</a></h2>
+        </div>
+        <div style="background-image: url(/assets/image/homeimage/6.jpeg); background-size:cover; height: 800px;"
+            id="image6" class="border border-5 border-dark col-1 car-image">
+            <h2 class="p-3 bg-dark"><a href="#">关于我司</br>Comey & Shepherd</a></h2>
+        </div>
+    </div>
+    <script type="text/babel">
+        $('#image1').hover(() => {
+            var $thisimage = $('#image1');
+            if ($thisimage.hasClass("col-7")) {
+                $thisimage.switchClass("col-1", "col-7");
+            }
+            else {
+                $thisimage.toggleClass('col-1');
+                $thisimage.toggleClass('col-7');
+                $thisimage.siblings().removeClass('col-7');
+                $thisimage.siblings().addClass('col-1');
+            }
+        });
+        $('#image2').hover(() => {
+            var $thisimage = $('#image2');
+            if ($thisimage.hasClass("col-7")) {
+                $thisimage.switchClass("col-1", "col-7");
+            }
+            else {
+                $thisimage.toggleClass('col-1');
+                $thisimage.toggleClass('col-7');
+                $thisimage.siblings().removeClass('col-7');
+                $thisimage.siblings().addClass('col-1');
+            }
+        });
+        $('#image3').hover(() => {
+            var $thisimage = $('#image3');
+            if ($thisimage.hasClass("col-7")) {
+                $thisimage.switchClass("col-1", "col-7");
+            }
+            else {
+                $thisimage.toggleClass('col-1');
+                $thisimage.toggleClass('col-7');
+                $thisimage.siblings().removeClass('col-7');
+                $thisimage.siblings().addClass('col-1');
+            }
+        });
+        $('#image4').hover(() => {
+            var $thisimage = $('#image4');
+            if ($thisimage.hasClass("col-7")) {
+                $thisimage.switchClass("col-1", "col-7");
+            }
+            else {
+                $thisimage.toggleClass('col-1');
+                $thisimage.toggleClass('col-7');
+                $thisimage.siblings().removeClass('col-7');
+                $thisimage.siblings().addClass('col-1');
+            }
+        });
+        $('#image5').hover(() => {
+            var $thisimage = $('#image5');
+            if ($thisimage.hasClass("col-7")) {
+                $thisimage.switchClass("col-1", "col-7");
+            }
+            else {
+                $thisimage.toggleClass('col-1');
+                $thisimage.toggleClass('col-7');
+                $thisimage.siblings().removeClass('col-7');
+                $thisimage.siblings().addClass('col-1');
+            }
+        });
+        $('#image6').hover(() => {
+            var $thisimage = $('#image6');
+            if ($thisimage.hasClass("col-7")) {
+                $thisimage.switchClass("col-1", "col-7");
+            }
+            else {
+                $thisimage.toggleClass('col-1');
+                $thisimage.toggleClass('col-7');
+                $thisimage.siblings().removeClass('col-7');
+                $thisimage.siblings().addClass('col-1');
+            }
+        });
+
+    </script>
